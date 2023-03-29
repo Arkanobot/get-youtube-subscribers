@@ -1,0 +1,36 @@
+{
+  "name": "get-youtube-subscribers",
+  "version": "1.0.0",
+  "description": "Apis for getting subscribers from database",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arkanobot/get-youtube-subscribers.git"
+  },
+  "keywords": [
+    "Node",
+    "js"
+  ],
+  "author": "Shreyas Bhat K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arkanobot/get-youtube-subscribers/issues"
+  },
+  "homepage": "https://github.com/Arkanobot/get-youtube-subscribers#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.2.0"
+  }
+}
