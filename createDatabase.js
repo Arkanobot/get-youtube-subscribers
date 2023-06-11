@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
-const subscriberModel = require("../models/subscribers");
+const dotenv = require("dotenv");
+const {Subscribers} = require("./src/model/subscribers");
 const data = require("./data");
+
+//read files from dotenv
+dotenv.config();
 
 // Connect to DATABASE
 const DATABASE_URL = process.env.MONGODB_URL;
@@ -13,8 +17,8 @@ db.on("error", (err) => console.log(err));
 db.once("open", () => console.log("Database created..."));
 
 const refreshAll = async () => {
-  await subscriberModel.deleteMany({});
-  await subscriberModel.insertMany(data);
+  await Subscribers.deleteMany({});
+  await Subscribers.insertMany(data);
   await mongoose.disconnect();
 };
 refreshAll();
