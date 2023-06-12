@@ -3,7 +3,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const { mongoose } = require("mongoose");
 const app = require("./src/app.js");
-
+const {swaggerSetup} = require("./src/view/swagger/swaggerOptions.js")
 //reading from the Env file
 dotenv.config();
 // Parse JSON bodies (as sent by API clients)
@@ -25,6 +25,9 @@ mongoose.connection.on("disconnected", () => {
 mongoose.connection.on("error", (err) => {
   console.log("Error connecting to database", err);
 });
+
+//setting up swagger docs
+swaggerSetup(app);
 
 // start the server
 const server = app.listen(process.env.PORT, () =>

@@ -13,7 +13,7 @@ exports.getSpecificSubscriber = async (request, response) => {
     }
     //if the data does not exist - send error message
     else {
-      response.status(400).send({ message: "No data was found for the ID" });
+      response.status(404).send({ message: "No data was found for the ID" });
     }
   } // if the Id in the params is not a valid ObjectID string, send error
   else {
