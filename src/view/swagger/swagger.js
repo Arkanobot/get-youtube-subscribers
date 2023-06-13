@@ -8,7 +8,7 @@
  *      responses:
  *        '200':
  *            description: Array of Objects containing every subscriber with their id, name, subscribed channel, subscribed date.
- *        '404':
+ *        '400':
  *            description: In case no data in DB - returns a error message stating No data found
  *        '500':
  *            description: In case of server error - returns a error message stating server error with error data
@@ -21,7 +21,7 @@
  *      responses:
  *        '200':
  *            description: Array of Objects containing every subscriber with their name and subscribed channel.
- *        '404':
+ *        '400':
  *            description: In case no data in DB - returns a error message stating No data found
  *        '500':
  *            description: In case of server error - returns a error message stating server error with error data
@@ -41,7 +41,7 @@
  *            description: Object containing every detail of the specific subscriber from the database.
  *        '400':
  *            description: In case of invalid ObjectId - returns an error stating Not a valid ID
- *        '404':
+ *        '400':
  *            description: In case no data in DB - returns a error message stating No data found
  *        '500':
  *            description: In case of server error - returns a error message stating server error with error data

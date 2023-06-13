@@ -10,7 +10,7 @@ exports.getSubscribersList = async (request, response) => {
     response.status(200).send(subscribers);
   } // if data does not exist in DB - send error
   else {
-    response.status(404).send({ message: "No data found" });
+    response.status(400).send({ message: "No data found" });
   }
 }catch (err){
   console.log(err)

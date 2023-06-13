@@ -13,7 +13,7 @@ exports.getSpecificFields = async (request, response) => {
     response.status(200).send(subscribers);
   } // if there is no values in the DB - sends the error
   else {
-    response.status(404).send({ message: "No data was found" });
+    response.status(400).send({ message: "No data was found" });
   }
   } catch(err){
     console.log(err)
