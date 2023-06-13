@@ -34,8 +34,8 @@
  *          -   in: path
  *              name: id
  *              required: true
- *              example: 64889e7ce15353edb8599bbf
- *      description: <b>Route to get all the details of a specific subscriber from the Database.</b> <br/><br/> <b>Example Existing ID </b> - <u>64889e7ce15353edb8599bbf</u>- This is an existing ID in the DB which returns a Object with the following data of a Specific User - the ID, Name, subscribed channel, subscribed date. <br/><br/> <b>Example Non Existing ID </b> - <u> 1483e88f0ae0a8b8d6fda066</u> - This returns an 404 error stating no document was found for the ID. <br/><br/> <b>Example Invalid ID </b> - <u> 1234567890asddfghk</u> - This is an invalid ObjectID and this returns a 400 error stating Not a Valid ID
+ *              example: 6488aa38a8920f6beaf32e57
+ *      description: <b>Route to get all the details of a specific subscriber from the Database.</b> <br/><br/> <b>Example Existing ID </b> - <u>6488aa38a8920f6beaf32e57</u>- This is an existing ID in the DB which returns a Object with the following data of a Specific User - the ID, Name, subscribed channel, subscribed date. <br/><br/> <b>Example Non Existing ID </b> - <u> 1483e88f0ae0a8b8d6fda066</u> - This returns an 404 error stating no document was found for the ID. <br/><br/> <b>Example Invalid ID </b> - <u> 1234567890asddfghk</u> - This is an invalid ObjectID and this returns a 400 error stating Not a Valid ID
  *      responses:
  *        '200':
  *            description: Object containing every detail of the specific subscriber from the database.
