@@ -9,8 +9,9 @@ exports.swaggerSetup = (app) => {
     swaggerDefinition: {
       info: {
         title: "Get Youtube Subscribers",
+        version: "v 1.0",
         description:
-          "Information related to all the available endpoints for the Capstone Project II: Get Youtube Subscribers",
+          "Information related to all the available endpoints for the Capstone Project II: Get Youtube Subscribers - By Shreyas Bhat K",
         contact: {
           name: "Shreyas Bhat K",
         },
@@ -20,6 +21,11 @@ exports.swaggerSetup = (app) => {
     apis: ["src/view/swagger/swagger.js"],
   };
 
+  const options = {
+    customCss: '.swagger-ui .topbar { display: none } .scheme-container { display: none }',
+    customSiteTitle:"Docs",
+  }
+
   const swaggerDocs = swaggerJsdoc(swaggerOptions);
-  app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs, {customSiteTitle:"Docs",}));
+  app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs, options));
 };

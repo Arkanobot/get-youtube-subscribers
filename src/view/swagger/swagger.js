@@ -30,6 +30,7 @@
  *          -   in: path
  *              name: id
  *              required: true
+ *              example: 6485e88f0fe0a8b8d6fda042
  *      description: <b>Route to get all the details of a specific subscriber from the Database.</b> <br/><br/> <b>Example Existing ID </b> - <u>6485e88f0fe0a8b8d6fda042</u>- This is an existing ID in the DB which returns a Object with the following data of a Specific User - the ID, Name, subscribed channel, subscribed date. <br/><br/> <b>Example Non Existing ID </b> - <u> 6485e88f0fe0a8b8d6fda066</u> - This returns an 404 error stating no document was found for the ID. <br/><br/> <b>Example Invalid ID </b> - <u> 1234567890asddfghk</u> - This is an invalid ObjectID and this returns a 400 error stating Not a Valid ID
  *      responses:
  *        '200':

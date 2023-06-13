@@ -74,7 +74,7 @@ describe("get-specific-subscriber-by-id", () => {
       .request(server)
       .get("/subscribers/1223211f35206ce49d1f273f")
       .end((err, res) => {
-        res.should.have.status(400);
+        res.should.have.status(404);
         res.body.should.be.a("object");
         res.body.should.have.a
           .property("message")
