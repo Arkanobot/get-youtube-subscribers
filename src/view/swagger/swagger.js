@@ -40,9 +40,7 @@
  *        '200':
  *            description: Object containing every detail of the specific subscriber from the database.
  *        '400':
- *            description: In case of invalid ObjectId - returns an error stating Not a valid ID
- *        '400':
- *            description: In case no data in DB - returns a error message stating No data found
+ *            description: In case of invalid ObjectId - returns an error stating Not a valid ID & also in case no data in DB - returns a error message stating No data found
  *        '500':
  *            description: In case of server error - returns a error message stating server error with error data
  */
