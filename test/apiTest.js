@@ -4,7 +4,7 @@ const { Subscribers } = require("../src/model/subscribers");
 //require the dev-dependencies
 const chai = require("chai");
 const chaiHTTP = require("chai-http");
-const server = require("../index");
+const server = require("../src/index");
 const should = chai.should();
 
 chai.use(chaiHTTP);

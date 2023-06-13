@@ -2,8 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const { mongoose } = require("mongoose");
-const app = require("./src/app.js");
-const {swaggerSetup} = require("./src/view/swagger/swaggerOptions.js")
+const app = require("./app.js");
+const {swaggerSetup} = require("./view/swagger/swaggerOptions.js")
 //reading from the Env file
 dotenv.config();
 // Parse JSON bodies (as sent by API clients)

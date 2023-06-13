@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --timeout 10000",
-    "start": "nodemon index.js"
+    "start": "nodemon ./src/index.js",
+    "createDB": "node ./src/createDatabase.js"
   },
   "repository": {
     "type": "git",

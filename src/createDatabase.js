@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const {Subscribers} = require("./src/model/subscribers");
+const { Subscribers } = require("./model/subscribers");
 const data = require("./data");
 
 //read files from dotenv
